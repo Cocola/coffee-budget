@@ -4,6 +4,8 @@
 
 An App dedicated to manage the coffee you drink in your office. In my coworking, you pay the coffee on the go, a cheap price. Just put 30 cents in the moneybox and you're good to go.
 
+![The coffee machine in the office 😍] (https://raw.githubusercontent.com/Cocola/coffee-budget/master/docs/coffee-office.jpg)
+
 The thing is that you don't have always the correct amount corresponding to your wallet !
 
 This app is here to help if you can drink coffee based on the money you give or if you have to refund the coffee bank !
