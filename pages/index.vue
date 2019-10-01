@@ -101,6 +101,10 @@ export default {
 </script>
 
 <style>
+.hero-body .button {
+  background-color: transparent;
+  color: currentColor;
+}
 .coffee__amount {
   font-size: 8rem;
   font-weight: 900;
