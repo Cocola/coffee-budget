@@ -74,13 +74,13 @@
               {{ $t('coffee.price') }}
               {{ coffeePrice.toFixed(2) }} €
             </p>
-            <div class="columns is-mobile">
-              <div class="column">
+            <div class="levels is-mobile">
+              <div class="level-item">
                 <button class="button is-small is-dark" @click="togglePrice">
                   {{ $t('coffee.edit') }}
                 </button>
               </div>
-              <div v-show="showPriceInput" class="column">
+              <div v-show="showPriceInput" class="level-item">
                 <input
                   v-model.number="coffeePrice"
                   type="number"
@@ -97,6 +97,9 @@
 
 <script>
 export default {
+  head() {
+    return { title: this.$t('home.title') }
+  },
   data() {
     return {
       coffeeAmount: 0,
@@ -129,37 +132,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.hero-body .button {
-  background-color: transparent;
-  color: currentColor;
-}
-.coffee__amount {
-  font-size: 8rem;
-  font-weight: 900;
-}
-.coffee__icon {
-  font-size: 5rem;
-}
-input[type='number'] {
-  display: inline-block;
-  width: 4rem;
-}
-.hero-head .navbar-brand {
-  justify-content: center;
-}
-.hero-body .container {
-  padding-bottom: 74px;
-}
-.hero-body .notification {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.hero-head .container,
-.hero-foot .container {
-  padding: 1rem;
-}
-</style>
