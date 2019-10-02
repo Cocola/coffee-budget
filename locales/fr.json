@@ -1,0 +1,18 @@
+{
+    "links": {
+        "english": "Version Anglaise",
+        "french": "Version Française"
+    },
+    "home": {
+        "title": "Gérer votre dose quotidienne de café ☕️"
+    },
+    "coffee" : {
+        "amount": "Café: ",
+        "drink": "Boire un café",
+        "buy": "Payer un café",
+        "budget": "Budget café:",
+        "price": "Prix du café:",
+        "edit": "Changer le prix du café",
+        "warn": "Attention, il faut payer son café 😉"
+    }
+}

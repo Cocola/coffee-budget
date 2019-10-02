@@ -20,6 +20,9 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
+  router: {
+    middleware: 'i18n'
+  },
   /*
    ** Global CSS
    */
@@ -27,7 +30,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/i18n.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -43,6 +46,11 @@ export default {
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    manifest: {
+      name: 'Coffee Budget'
+    }
+  },
   /*
    ** Build configuration
    */
