@@ -7,7 +7,7 @@
         "title": "Mon budget café ☕️"
     },
     "coffee" : {
-        "amount": "Café: ",
+        "amount": "Café restant: ",
         "drink": "Boire un café",
         "buy": "Payer un café",
         "budget": "Budget café:",

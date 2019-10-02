@@ -40,18 +40,21 @@
       <div class="container has-text-centered">
         <div>
           <div class="title is-6">{{ $t('coffee.amount') }}</div>
-          <div class="coffee__amount">
+          <div
+            :class="{ 'has-text-danger': coffeeAmount <= -1 }"
+            class="coffee__amount"
+          >
             {{ coffeeAmount }} <span class="coffee__icon">☕️</span>
           </div>
         </div>
         <div class="columns is-mobile">
           <div class="column">
-            <button class="button" @click="removeCoffee">
+            <button class="button button--remove" @click="removeCoffee">
               {{ $t('coffee.drink') }}
             </button>
           </div>
           <div class="column">
-            <button class="button" @click="addCoffee">
+            <button class="button button--add" @click="addCoffee">
               {{ $t('coffee.buy') }}
             </button>
           </div>
