@@ -74,7 +74,7 @@
               {{ $t('coffee.price') }}
               {{ coffeePrice.toFixed(2) }} €
             </p>
-            <div class="levels is-mobile">
+            <div class="level is-mobile">
               <div class="level-item">
                 <button class="button is-small is-dark" @click="togglePrice">
                   {{ $t('coffee.edit') }}
