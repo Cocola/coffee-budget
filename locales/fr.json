@@ -1,10 +1,10 @@
 {
     "links": {
-        "english": "Version Anglaise",
-        "french": "Version Française"
+        "english": "🇬🇧 EN",
+        "french": "🇫🇷 FR"
     },
     "home": {
-        "title": "Gérer votre dose quotidienne de café ☕️"
+        "title": "Mon budget café ☕️"
     },
     "coffee" : {
         "amount": "Café: ",

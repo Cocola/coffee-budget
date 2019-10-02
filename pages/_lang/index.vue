@@ -9,6 +9,28 @@
                 {{ $t('home.title') }}
               </h1>
             </div>
+            <div class="navbar-item">
+              <div class="navbar-end">
+                <NuxtLink
+                  v-if="$i18n.locale === 'fr'"
+                  :to="`/en` + $route.fullPath"
+                  class="navbar-item"
+                  active-class="none"
+                  exact
+                >
+                  {{ $t('links.english') }}
+                </NuxtLink>
+                <NuxtLink
+                  v-else
+                  :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
+                  class="navbar-item"
+                  active-class="none"
+                  exact
+                >
+                  {{ $t('links.french') }}
+                </NuxtLink>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -123,6 +145,18 @@ export default {
 input[type='number'] {
   display: inline-block;
   width: 4rem;
+}
+.hero-head .navbar-brand {
+  justify-content: center;
+}
+.hero-body .container {
+  padding-bottom: 74px;
+}
+.hero-body .notification {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .hero-head .container,
 .hero-foot .container {
