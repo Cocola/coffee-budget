@@ -39,12 +39,11 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div>
-          <div class="title is-6">{{ $t('coffee.amount') }}</div>
           <div
             :class="{ 'has-text-danger': coffeeAmount <= -1 }"
             class="coffee__amount"
           >
-            {{ coffeeAmount }} <span class="coffee__icon">☕️</span>
+            {{ coffeeAmount }}
           </div>
         </div>
         <div class="columns is-mobile">
