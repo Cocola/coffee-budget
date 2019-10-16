@@ -42,24 +42,25 @@ $mainrgba : rgba(255,255,255, 0.25);
                 height: 4rem;
                 line-height: 4rem;
                 border-radius: 50%;
+                color: $mainrgba;
                 border: 3px solid $mainrgba;
-                border-left-color: rgba(white, .15);
-                border-top-color: rgba(white, .15);
-                transition: transform .25s ease-in-out;
-                box-shadow: 0 0 4px rgba(0,0,0, .5);
+                background-color: rgba(255,255,255, .05);
+                transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+                box-shadow: 0 0 6px rgba(255,255,255, .01);
             }
 
             &:hover,
             &:focus {
-                color: currentColor;
-
-                &:before {
-                    border-color: #fff;
-                }
+                color: #fff;
             }
             &:active {
+                color: #fff;
+                box-shadow: 0 0 4px rgba(255,255,255, .5);
+
                 &:before {
-                    transform: translateY(1px);
+                    color: #fff;
+                    box-shadow: 0 0 6px rgba(255,255,255, .5);
+                    transform: translateY(1px) scale(0.98);
                 }
             }
 
