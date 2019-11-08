@@ -57,7 +57,8 @@ export default {
    */
   modules: [
     '@nuxtjs/bulma',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', { id: 'UA-151898084-1' }]
   ],
   pwa: {
     manifest: {
