@@ -239,7 +239,11 @@ body {
 
         .link {
             padding: 0;
+            border-radius: 0;
+            background: none;
             text-decoration: underline;
+            appearance: none;
+            box-shadow: none;
         }
         .inline-input {
             display: inline-block;
