@@ -6,6 +6,9 @@
     "home": {
         "title": "My coffee budget ☕️"
     },
+    "credit": {
+        "author": "Made with ❤️ by"
+    },
     "coffee" : {
         "amount": "Coffee Amount: ",
         "drink": "Drink a coffee",
@@ -13,6 +16,8 @@
         "budget": "Credit:",
         "price": "Coffee Price:",
         "edit": "Edit Coffee price",
-        "warn": "Be careful, you need to pay back your coffee 😉"
+        "warn": "Be careful, you need to pay back your coffee 😉",
+        "warn_opt_1": "In the piggy bank 🐷",
+        "warn_opt_2": "Or by credit card 💳!"
     }
 }

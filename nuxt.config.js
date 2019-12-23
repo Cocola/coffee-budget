@@ -26,7 +26,8 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Orbitron&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Orbitron:500&display=swap&text=1234567890-'
       }
     ]
   },
@@ -58,6 +59,7 @@ export default {
   modules: [
     '@nuxtjs/bulma',
     '@nuxtjs/pwa',
+    '@nuxtjs/svg',
     ['@nuxtjs/google-analytics', { id: 'UA-151898084-1' }]
   ],
   pwa: {

@@ -4,7 +4,10 @@
         "french": "🇫🇷 FR"
     },
     "home": {
-        "title": "Mon budget café ☕️"
+        "title": "☕️ Budget café CWPB"
+    },
+    "credit": {
+        "author": "Fait avec ❤️ par"
     },
     "coffee" : {
         "amount": "Café restant: ",
@@ -13,6 +16,8 @@
         "budget": "Crédit:",
         "price": "Prix du café:",
         "edit": "Changer le prix du café",
-        "warn": "Attention, il faut payer son café 😉"
+        "warn": "Attention, il faut payer son café 😉",
+        "warn_opt_1": "Soit dans la tirelire 🐷",
+        "warn_opt_2": "Soit par paiement en ligne 💳!"
     }
 }
