@@ -40,7 +40,27 @@
     </div>
 
     <div class="hero-body">
-      <div class="container has-text-centered">
+      <div
+        :class="{ 'has-warning': coffeeAmount <= -1 }"
+        class="container has-text-centered"
+      >
+        <div
+          v-if="coffeeAmount <= -1"
+          class="notification is-warning is-bold content"
+        >
+          {{ $t('coffee.warn') }}
+          <ul>
+            <li>{{ $t('coffee.warn_opt_1') }}</li>
+            <li>
+              <a
+                href="https://guichet.coworking-pb.com/cafe"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >{{ $t('coffee.warn_opt_2') }}</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="coffee__card">
           <div
             :class="{ 'has-text-danger': coffeeAmount <= -1 }"
@@ -70,23 +90,6 @@
                   {{ $t('coffee.buy') }}
                 </button>
               </div>
-            </div>
-            <div
-              v-if="coffeeAmount <= -1"
-              class="notification is-warning is-bold content"
-            >
-              {{ $t('coffee.warn') }}
-              <ul>
-                <li>{{ $t('coffee.warn_opt_1') }}</li>
-                <li>
-                  <a
-                    href="https://guichet.coworking-pb.com/cafe"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    >{{ $t('coffee.warn_opt_2') }}</a
-                  >
-                </li>
-              </ul>
             </div>
             <div class="columns is-mobile coffee__settings">
               <div class="column">
