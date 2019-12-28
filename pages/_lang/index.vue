@@ -135,7 +135,12 @@ export default {
     LogoCWPB
   },
   head() {
-    return { title: this.$t('home.title') }
+    return {
+      title: this.$t('home.title'),
+      bodyAttrs: {
+        ontouchstart: ''
+      }
+    }
   },
   data() {
     return {

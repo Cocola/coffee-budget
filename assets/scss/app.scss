@@ -11,6 +11,8 @@ $coffee-3: #C28729;
 
 body {
     background: $light;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
 }
 .hero {
 
