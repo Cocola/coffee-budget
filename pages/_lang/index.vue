@@ -41,11 +41,11 @@
 
     <div class="hero-body">
       <div
-        :class="{ 'has-warning': coffeeAmount <= -1 }"
+        :class="{ 'has-warning': coffeeAmount <= 0 }"
         class="container has-text-centered"
       >
         <div
-          v-if="coffeeAmount <= -1"
+          v-if="coffeeAmount <= 0"
           class="notification is-warning is-bold content"
         >
           {{ $t('coffee.warn') }}
