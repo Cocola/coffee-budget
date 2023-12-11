@@ -145,7 +145,7 @@ export default {
   data() {
     return {
       coffeeAmount: 0,
-      coffeePrice: 0.3,
+      coffeePrice: 0.4,
       showPriceInput: false
     }
   },
